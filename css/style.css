@@ -1,0 +1,376 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/*  START MENU SECTION */
+
+  section.home .menu {
+    top: 0;
+    bottom: 0;
+    z-index: 454978978;
+    background-color: rgb(31, 31, 39);
+    left: -250px;
+    width: 250px;
+    padding: 20px;
+  }
+  section.home .menu i{
+    position: absolute;
+    top: 50px;
+    right: -50px;
+    font-size: 30px;
+    background-color: #d69d00;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px 0px #ffc80066 ;
+    cursor: pointer;
+  }
+
+
+  section.home .menu a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 10px 8px 10px 5px;
+    display: inline-block;
+    width: 100%;
+    transition: 0.4s all;
+  }
+  section.home a:hover,section.home a.active{
+    color: greenyellow;
+  }
+
+/*  END MENU SECTION */
+
+
+
+
+
+
+
+
+
+
+/*  START HOME SECTION */
+
+section.home {
+    height: 100vh;
+    background-image: url("../image/bckg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section.home .title {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(94, 0, 131, 0.6);
+    color: white;
+}
+
+section.home .title h1{
+    font-size : clamp(2rem, 10vw, 5rem);
+    margin-bottom: 20px;
+    text-shadow:  5px 1px 3px #b220ae;
+} 
+section.home .title p {
+  font-size : clamp(1rem, 5vw, 2rem);
+}
+
+/*  END HOME SECTION */
+
+
+
+
+/*  START PARTY INFO SECTION */
+
+section.partyInfo {
+  background: rgb(105,0,122);
+  background: linear-gradient(0deg, rgba(105,0,122,1) 0%, rgba(130,39,203,1) 60%, rgba(114,8,211,1) 100%);
+  color: white;
+}
+
+section.partyInfo h2 {
+  box-shadow: 0px 2px 15px 0px #00000066 ;
+  text-shadow:  0px 2px 1px #00000066 ;
+}
+
+section.partyInfo .info-block {
+  box-shadow: 0px 2px 15px 0px #ffc80066 ;
+}
+
+section.partyInfo h3 {
+  background-color: rgba(94, 0, 131);
+  cursor: pointer;
+  border-bottom: 1px solid yellowgreen;
+}
+
+section.partyInfo h3 i {
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: skyblue;
+  padding: 5px;
+}
+section.partyInfo p {
+  background-color: darkslategrey;
+  line-height: 60px;
+  font-size: 20px;
+}
+section.partyInfo p:not(:first-of-type){
+  display: none;
+}
+section.partyInfo p span {
+  color: yellow;
+}
+
+
+/*  END PARTY INFO SECTION */
+
+
+
+/*  START COUNTDOWN SECTION */
+
+section.countDown {
+  background-image: url("../image/bgcoundown.webp");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+section.countDown .overlay {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color:  rgba(94, 0, 131, 0.6);
+  backdrop-filter: blur(3px);
+}
+section.countDown h2 {
+  box-shadow: 0px 2px 15px 0px #00000066 ;
+  text-shadow:  0px 2px 1px #00000066 ;
+}
+
+section.countDown .time p{
+  color: white;
+  width: 80px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b220ae;
+  padding: 20px;
+  font-size : clamp(1rem, 5vw, 4rem);
+  border-radius: 10px;
+  margin-inline: .1875rem;
+  box-shadow: 0px 2px 15px 0px #ffc80066 ;
+  text-shadow:  0px 2px 1px #00000066 ;
+}
+
+@media  screen and (max-width: 600px) {
+  section.countDown .time p {
+    width: 60px;
+    height: 40px;
+    font-size : clamp(1rem, 3vw, 5rem);
+  }
+  section.countDown h2 {
+    font-size: 20px;
+  }
+  section.countDown {
+    height: 200px;
+  }
+
+}
+
+@media  screen and (min-width: 600px) {
+  section.countDown .time p {
+    width: 210px;
+    height: 120px;
+  }
+
+}
+
+/*  END COUNTDOWN SECTION */
+
+
+
+
+/*   START CONTACT SECTION   */
+
+
+section.contact .info-body a {
+  text-decoration: none;
+  color: black;
+}
+
+section.contact footer .icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.4s all;
+  font-size: 18px;
+  margin-inline: 3px;
+}
+section.contact footer .icon a {
+  text-decoration: none;
+  color: teal;
+  padding: 10px;
+  transition: 0.4s all;
+}
+
+section.contact footer .icon:hover {
+  background-color: teal;
+}
+section.contact footer .icon:hover a {
+  color: white;
+}
+
+textarea {
+  height: 170px;
+  resize: none;
+}
+
+@media  screen and (max-width: 600px) {
+  section.contact footer .icon {
+    margin-bottom: 20px;
+  }
+
+}
+
+
+/*   END CONTACT SECTION   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.animation {
+    height: 100px;
+}
+
+
+.loader {
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+  position: relative;
+  background: currentColor;
+  color: #FFF;
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.3s linear infinite alternate;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: currentColor;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  animation: animloader1 0.3s  0.45s  linear infinite alternate;
+}
+.loader::before {
+  left: -20px;
+  animation-delay: 0s;
+}
+
+@keyframes animloader {
+  0% {
+    height: 40px;
+    transform: translateY(0);
+  }
+  100% {
+    height: 10px;
+    transform: translateY(30px);
+  }
+}
+
+@keyframes animloader1 {
+  0% {
+    height: 48px;
+  }
+  100% {
+    height: 4.8px;
+  }
+}
+
+
+
+
+
+
+
+/*...................*/
+
+
+.loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 6666666666666;
+  background-color: rgba(218, 112, 214, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.loaderPage {
+  width: 48px;
+  height: 48px;
+  background: #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loaderPage::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  color: #FF3D00;
+  background: currentColor;
+  border-radius: 50%;
+  box-shadow: 25px 2px, 10px 22px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
