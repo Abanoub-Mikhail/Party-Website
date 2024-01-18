@@ -1,9 +1,5 @@
 
 
-$(document).ready(function(){
-
-    $(".loading").fadeOut(1000);
-
 
     // TOGGLE ANIMATION
 $(".singer-info").on("click", function (e) {
@@ -82,7 +78,6 @@ $(".menu a[href^='#']").on("click", function (e) {
     let sectionOffset = $(href).offset().top
     $("body,html").animate({scrollTop:sectionOffset-50},1000)
     $(e.target).addClass("active").parent().siblings().children().removeClass("active");
-})
 })
 
 
